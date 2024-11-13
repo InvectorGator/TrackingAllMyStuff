@@ -1,0 +1,13 @@
+# NodeJS Dependency Directories
+node_modules
+
+# Local Environemnt Variables
+.env
+
+# Logging
+*.log
+npm-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# SQLite Databases
+*.db
