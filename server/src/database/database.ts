@@ -1,5 +1,5 @@
 /**
- * This script prepares a database for use by the WhereIsMyStuff application.
+ * This script prepares a database for use by the TrackingAllMyStuff application.
  */
 
 import MyStuffDatabaseFactory from "./factories/myStuffDatabaseFactory.js";
@@ -15,7 +15,7 @@ let databaseAdapter: MyStuffDatabaseAdapterInterface;
 
 
 /**
- * Attempts to initialize a new database adapter for use by the WhereIsMyStuff application.
+ * Attempts to initialize a new database adapter for use by the TrackingAllMyStuff application.
  */
 async function initializeDatabase() {
     try {

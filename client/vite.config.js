@@ -17,7 +17,7 @@ export default defineConfig(({ mode }) => {
     const VITE_PATH = ENV.VITE_BASE_URL || "http://localhost";
 
     // Log paths to console for visibility.
-    console.log("Now starting WhereIsMyStuff: ");
+    console.log("Now starting TrackingAllMyStuff: ");
     console.log(`   Client Path:    ${VITE_PATH}${VITE_PORT === '' ? '' : `:${VITE_PORT}`}${VITE_BASE}`);
     console.log(`   API Path:       ${API_PATH_WITH_PORT}`);
 

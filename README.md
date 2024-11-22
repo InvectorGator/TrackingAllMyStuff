@@ -1,4 +1,4 @@
-# WhereIsMyStuff
+# TrackingAllMyStuff
 A local, open-source application for organizing your stuff so you can find it again later.
 
 > [!IMPORTANT]
@@ -8,7 +8,7 @@ A local, open-source application for organizing your stuff so you can find it ag
 --
 
 ## Build Requirements
-WhereIsMyStuff relies on [Node.js version 22.11.0](https://nodejs.org/en/download/package-manager).
+TrackingAllMyStuff relies on [Node.js version 22.11.0](https://nodejs.org/en/download/package-manager).
 
 
 --
@@ -35,9 +35,9 @@ This project uses the following tools and libraries (see [third-party_licenses](
 
 --
 
-## WhereIsMyStuff License and Copyright
+## TrackingAllMyStuff License and Copyright
 
-    WhereIsMyStuff
+    TrackingAllMyStuff
     Copyright (C) 2024 Shannon Hutchinson
 
     This program is free software: you can redistribute it and/or modify

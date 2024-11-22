@@ -1,10 +1,10 @@
 {
-  "name": "whereismystuff-server",
+  "name": "trackingallmystuff-server",
   "version": "1.0.0",
   "type": "module",
   "description": "An application to help keep track of all your stuff.",
   "main": "dist/server.js",
-  "homepage": "https://github.com/InvectorGator/WhereIsMyStuff#readme",
+  "homepage": "https://github.com/InvectorGator/TrackingAllMyStuff#readme",
   "dependencies": {
     "express": "^4.21.1",
     "sqlite3": "^5.1.7",
@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/InvectorGator/WhereIsMyStuff.git"
+    "url": "git+https://github.com/InvectorGator/TrackingAllMyStuff.git"
   },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/InvectorGator/WhereIsMyStuff/issues"
+    "url": "https://github.com/InvectorGator/TrackingAllMyStuff/issues"
   },
   "devDependencies": {
     "nodemon": "^3.1.7",

@@ -14,11 +14,11 @@ import router from './router.js';
 
 
 // Create the base application and configure any routing or frameworks.
-const whereIsMyStuffApp = createApp(VueApp);
-whereIsMyStuffApp.use(router).use(Quasar, {
+const trackingAllMyStuffApp = createApp(VueApp);
+trackingAllMyStuffApp.use(router).use(Quasar, {
     plugins: {},
     iconSet: quasarIconSet
 });
 
 // Mount to the #app div in index.html to start the application!
-whereIsMyStuffApp.mount('#app');
+trackingAllMyStuffApp.mount('#app');
