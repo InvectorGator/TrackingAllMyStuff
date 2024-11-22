@@ -7,7 +7,7 @@
 export function codeToQueryParams<DBModel>(createDBModel: () => DBModel) {
     let instanceOfModel = createDBModel();
     
-    let paramList = [];
+    let paramList: string[] = [];
 
     for (let key in instanceOfModel) {
         paramList.push(key);
