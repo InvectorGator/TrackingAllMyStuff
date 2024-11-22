@@ -14,7 +14,7 @@ export enum DatabaseType {
 export type DatabaseAdapter = SQLite3MyStuffDatabaseAdapter;
 
 /**
- * Record of supported database types and their corresponding adapters.
+ * Record of supported database types and their corresponding database adapters.
  */
 export const DatabaseAdapterTypes: Record<DatabaseType, new (databasePath: string) => DatabaseAdapter> = {
     [DatabaseType.Sqlite3]: SQLite3MyStuffDatabaseAdapter
