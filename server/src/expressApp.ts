@@ -1,14 +1,12 @@
 import express from 'express';
-import dotenv from 'dotenv';
 import locationRoutes from './routes/locationRoutes.js';
 
-dotenv.config();
-
-// Create and configure an Express object.
 /**
  * ExpressJS object to handle API calls.
  */
 const expressApp = express();
+
+// Configure Express to automatically parse JSON.
 expressApp.use(express.json());
 
 // TODO: TESTING - log all requests to the console; debugging purposes only.
@@ -17,7 +15,7 @@ expressApp.use((request, response, next) => {
     next();
 });
 
-// TODO: TESTING - Log all responses; debugging purposes only.
+// TODO: TESTING - Log all responses to the console; debugging purposes only.
 expressApp.use((request, response, next) => {
     response.on('finish', () => {
         console.log(`Response: ${response.statusCode} ${response.statusMessage}`);
@@ -25,6 +23,7 @@ expressApp.use((request, response, next) => {
     next();
 });
 
+// Configure Express API routing for the WhereIsMyStuff application.
 expressApp.use('/api', locationRoutes);
 
 export default expressApp;
