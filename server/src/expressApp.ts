@@ -23,7 +23,7 @@ expressApp.use((request, response, next) => {
     next();
 });
 
-// Configure Express API routing for the WhereIsMyStuff application.
+// Configure Express API routing for the TrackingAllMyStuff application.
 expressApp.use('/api', locationRoutes);
 
 export default expressApp;

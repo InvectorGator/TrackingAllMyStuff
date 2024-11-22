@@ -1,5 +1,5 @@
 /**
- * Interface defining the expected behaviors of a WhereIsMyStuff database.
+ * Interface defining the expected behaviors of a TrackingAllMyStuff database.
  */
 interface MyStuffDatabaseAdapterInterface {
     /**
