@@ -7,7 +7,7 @@
                 v-for="location in locations"
                 :key="location.id"
             >
-                {{ location.name }}
+                {{ location.name }} {{ location.parentLocationId }}
             </li>
         </ul>
     </div>

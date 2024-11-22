@@ -1,6 +1,9 @@
 # NodeJS Dependency Directories
 node_modules
 
+# Transpiled Typescript Directory
+dist
+
 # Local Environemnt Variables
 .env
 

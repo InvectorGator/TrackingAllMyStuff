@@ -3,29 +3,39 @@
   "version": "1.0.0",
   "type": "module",
   "description": "An application to help keep track of all your stuff.",
-  "main": "src/server.js",
+  "main": "dist/server.js",
+  "homepage": "https://github.com/InvectorGator/WhereIsMyStuff#readme",
   "dependencies": {
     "express": "^4.21.1",
     "sqlite3": "^5.1.7",
     "dotenv": "^16.4.5"
   },
-  "devDependencies": {
-    "nodemon": "^3.1.7",
-    "eslint": "^9.14.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/InvectorGator/WhereIsMyStuff.git"
   },
-  "author": "Invectorgator",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/InvectorGator/WhereIsMyStuff/issues"
   },
-  "homepage": "https://github.com/InvectorGator/WhereIsMyStuff#readme"
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "eslint": "^9.14.0",
+    "typescript": "^5.6.3",
+    "ts-node":"^10.9.2",
+    "@types/node": "^22.9.0",
+    "@types/express": "^5.0.0",
+    "@types/eslint": "^9.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=.env dist/server.js",
+    "dev": "nodemon"
+  },
+  "nodemonConfig": {
+    "watch": ["src"],
+    "ext": "js, json, ts",
+    "ignore": ["src/**/*.spec.ts", "node_modules", "dist"],
+    "exec": "tsc && node --env-file=.env dist/server.js"
+  }
 }
